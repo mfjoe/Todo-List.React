@@ -10,8 +10,12 @@ function App() {
   return (
     <div className="App">
       <header>Joe's React Todo List</header>
-      <Form inputText={inputText} todos={todos} setTodos ={setTodos} setInputText = {setInputText}/>
-      <TodoList />
+      <Form
+      inputText={inputText}
+      todos={todos}
+      setTodos ={setTodos}
+      setInputText = {setInputText}/>
+      <TodoList setTodos={setTodos} todos={todos} />
     </div>
   );
 }
