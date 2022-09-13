@@ -10,6 +10,17 @@ body {
   min-height: 100vh;
 }
 
+.app_frame {
+  background-color: #F4F5F7;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 40%;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
 header,
 form {
   min-height: 20vh;
@@ -29,12 +40,19 @@ form {
   align-items: center;
 }
 
+form input {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
 form input,
 form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
   background: white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
 }
 
 form button {
@@ -42,6 +60,8 @@ form button {
   cursor: pointer;
   transition: all 0.3s ease;
   background: #f7fffe;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 form button:hover {
@@ -64,6 +84,12 @@ select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
 }
 
 select {
@@ -72,7 +98,9 @@ select {
   cursor: pointer;
   width: 12rem;
   padding: 1rem;
+
 }
+
 
 /* Arrow */
 .select::after {
@@ -84,6 +112,8 @@ select {
   background: #5CD3F3;
   cursor: pointer;
   pointer-events: none;
+  border: bottom right;-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .todo-container {
@@ -106,6 +136,11 @@ select {
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .filter-todo {
@@ -114,6 +149,12 @@ select {
 
 .todo li{
   flex: 1;
+
+}
+
+.trash-btn{
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .trash-btn,
@@ -135,6 +176,12 @@ select {
   pointer-events: none;
 }
 
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 .todo-item {
   padding: 0rem 0.5rem;
+
 }
